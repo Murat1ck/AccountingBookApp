@@ -2,7 +2,8 @@ package com.example.accountingbookapp.services;
 
 import com.example.accountingbookapp.model.Socks;
 
-
+import java.io.IOException;
+import java.nio.file.Path;
 
 
 public interface WarehouseServices {
@@ -21,5 +22,5 @@ public interface WarehouseServices {
     boolean deleteSocks(Socks socks);
 
 
-
+    Path getSocksMap() throws IOException;
 }
